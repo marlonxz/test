@@ -2,10 +2,14 @@ specVersion: "4.0"
 metadata:
   name: test
 type: application
-framework:
-  name: OpenUI5
-  version: "1.154.0"
-  libraries:
-    - name: sap.m
-    - name: sap.ui.core
-    - name: themelib_sap_horizon
+server:
+  customMiddleware:
+  - name: fiori-tools-proxy
+    afterMiddleware: compression
+    configuration:
+      ui5:
+        path:
+        - /resources
+        url: https://sapui5.hana.ondemand.com/
+  - name: fiori-tools-appreload
+    afterMiddleware: compression
