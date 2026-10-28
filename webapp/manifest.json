@@ -1,0 +1,18 @@
+{
+    "_version": "1.72.0",
+    "sap.app": {
+        "id": "com.logaligroup.test",
+        "type": "application",
+        "title": "Reto SAPUI5",
+        "description": "Reto SAPUI5",
+        "applicationVersion": {
+            "version": "1.0.0"
+        }
+    },
+    "sap.ui": {
+
+    },
+    "sap.ui5": {
+
+    }
+}
